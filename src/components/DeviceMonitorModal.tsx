@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ExternalLink, Copy, Check, RotateCw, Smartphone, Monitor, ShieldCheck, Zap, Globe, Sparkles } from 'lucide-react';
+import { X, ExternalLink, Copy, Check, RotateCw, Smartphone, Monitor, ShieldCheck, Zap, Globe, Sparkles, Github } from 'lucide-react';
 import { Project, ProfileDetails } from '../types';
 import { getSocialUrls } from '../data/profile';
 import { sound } from '../utils/sound';
@@ -112,6 +112,20 @@ export const DeviceMonitorModal: React.FC<DeviceMonitorModalProps> = ({
                   <span className="hidden sm:inline">Mobile (375px)</span>
                 </button>
               </div>
+
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => sound.playClick()}
+                  className="p-1.5 sm:px-2.5 sm:py-1.5 bg-stone-200 dark:bg-stone-800 hover:bg-stone-300 dark:hover:bg-stone-700 rounded-xl text-xs font-mono font-semibold transition-colors flex items-center gap-1 text-stone-700 dark:text-stone-300"
+                  title="View GitHub Repository (satyajit200y-maker)"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">GitHub</span>
+                </a>
+              )}
 
               <a
                 href={project.liveUrl}

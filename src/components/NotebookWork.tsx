@@ -6,11 +6,13 @@ import {
   ArrowUpRight,
   ChevronLeft,
   ChevronRight,
-  FolderOpen
+  FolderOpen,
+  Github
 } from 'lucide-react';
 import { Project, ProfileDetails } from '../types';
 import { getSocialUrls } from '../data/profile';
 import { sound } from '../utils/sound';
+import { CardArt } from './CardArt';
 
 interface NotebookWorkProps {
   projects: Project[];
@@ -18,77 +20,6 @@ interface NotebookWorkProps {
   direction: number;
   onOpenMonitor: (project: Project) => void;
 }
-
-// Visual art card renderer
-const CardArt: React.FC<{ project: Project }> = ({ project }) => {
-  const art = project.cardCoverArt;
-  if (!art) {
-    return (
-      <div
-        className="w-full h-full flex flex-col items-center justify-center p-3 text-center"
-        style={{ backgroundColor: project.cardColor || '#1c1917' }}
-      >
-        <span className="font-serif text-base font-bold text-white tracking-wide">
-          {project.title}
-        </span>
-        <span className="text-[10px] font-mono text-amber-300/80 uppercase mt-1">
-          {project.category}
-        </span>
-      </div>
-    );
-  }
-
-  const bgPatterns: Record<string, string> = {
-    dots: 'radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px)',
-    grid: 'linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)',
-    linen: 'repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 1px, transparent 0, transparent 50%)',
-    slant: 'repeating-linear-gradient(-45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 2px, transparent 0, transparent 8px)'
-  };
-
-  return (
-    <div
-      className="relative w-full h-full flex flex-col justify-between p-3.5 select-none overflow-hidden"
-      style={{
-        backgroundColor: project.cardColor || '#1c1917',
-        backgroundImage: bgPatterns[art.bgPattern || 'linen'],
-        backgroundSize: art.bgPattern === 'dots' ? '12px 12px' : '16px 16px'
-      }}
-    >
-      <div className="flex items-center justify-between z-10">
-        <span
-          className="text-[9px] font-mono uppercase tracking-widest px-1.5 py-0.5 rounded font-bold"
-          style={{
-            backgroundColor: `${art.accentColor || '#eab308'}25`,
-            color: art.accentColor || '#eab308',
-            border: `1px solid ${art.accentColor || '#eab308'}50`
-          }}
-        >
-          {project.tier}
-        </span>
-        <span className="text-[10px] font-mono text-white/50">{project.specs?.loadTime || '0.3s'}</span>
-      </div>
-
-      <div className="z-10 my-auto py-1">
-        <div
-          className="font-serif-book text-xl font-bold tracking-tight text-white leading-tight"
-          style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}
-        >
-          {art.title || project.title}
-        </div>
-        {art.subtitle && (
-          <div className="text-[10px] font-mono tracking-widest text-amber-300/90 uppercase mt-0.5">
-            {art.subtitle}
-          </div>
-        )}
-      </div>
-
-      <div className="flex items-center justify-between text-[9px] font-mono text-stone-300/80 border-t border-white/10 pt-1.5 z-10">
-        <span className="truncate max-w-[130px]">{project.category}</span>
-        <span className="text-amber-400 font-bold">100 SCORE</span>
-      </div>
-    </div>
-  );
-};
 
 export const NotebookWork: React.FC<NotebookWorkProps> = ({
   projects,
@@ -100,7 +31,7 @@ export const NotebookWork: React.FC<NotebookWorkProps> = ({
   const [sheetIndex, setSheetIndex] = useState<number>(0);
   const socials = getSocialUrls(profile);
 
-  const filterOptions = ['All', 'Hospitality', 'Fitness', 'Commerce', 'Services'];
+  const filterOptions = ['All', 'Hospitality', 'Fitness', 'Creative', 'Apps & Tools'];
 
   const filteredProjects = projects.filter(p => {
     if (activeFilter === 'All') return true;
@@ -221,18 +152,37 @@ export const NotebookWork: React.FC<NotebookWorkProps> = ({
 
       {/* Card Actions */}
       <div className="mt-2.5 pt-2 border-t border-[#ded5c2] dark:border-[#332b24] flex items-center justify-between font-mono">
-        <button
-          id={`work-preview-btn-${project.id}`}
-          onClick={() => {
-            sound.playCardSelect();
-            onOpenMonitor(project);
-          }}
-          title="Inspect in Simulated Device Screen"
-          className="flex items-center gap-1 text-[11px] font-semibold text-[#574d3f] dark:text-[#c4b5a2] hover:text-[#1c1917] dark:hover:text-white transition-colors cursor-pointer"
-        >
-          <Monitor className="w-3 h-3 text-amber-600" />
-          <span>Inspect</span>
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            id={`work-preview-btn-${project.id}`}
+            onClick={() => {
+              sound.playCardSelect();
+              onOpenMonitor(project);
+            }}
+            title="Inspect in Simulated Device Screen"
+            className="flex items-center gap-1 text-[11px] font-semibold text-[#574d3f] dark:text-[#c4b5a2] hover:text-[#1c1917] dark:hover:text-white transition-colors cursor-pointer"
+          >
+            <Monitor className="w-3 h-3 text-amber-600" />
+            <span>Inspect</span>
+          </button>
+
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.stopPropagation();
+                sound.playClick();
+              }}
+              title="View repository on GitHub (satyajit200y-maker)"
+              className="flex items-center gap-1 text-[11px] font-semibold text-[#574d3f] dark:text-[#c4b5a2] hover:text-stone-900 dark:hover:text-white transition-colors"
+            >
+              <Github className="w-3 h-3 text-stone-600 dark:text-stone-400" />
+              <span>Repo</span>
+            </a>
+          )}
+        </div>
 
         <a
           href={`${socials.whatsappUrl}?text=${encodeURIComponent(
@@ -389,7 +339,7 @@ export const NotebookWork: React.FC<NotebookWorkProps> = ({
                 <span>Tap "Inspect" for interactive screen demo</span>
               </span>
               <span className="text-[10px] text-amber-800 dark:text-amber-400 font-bold">
-                13 LIVE SITES
+                {projects.length} LIVE SITES
               </span>
             </div>
 

@@ -122,7 +122,7 @@ export const NotebookAbout: React.FC<NotebookAboutProps> = ({ profile, direction
                   <p className="text-stone-400">// Primary Engine</p>
                   <p className="text-emerald-400 font-bold">React 19 + TypeScript</p>
                   <p className="text-stone-400 mt-1.5">// Verified Registry</p>
-                  <p className="text-amber-300 font-bold">13 Shipped Client Sites</p>
+                  <p className="text-amber-300 font-bold">9 Shipped Projects</p>
                 </div>
               </div>
 
@@ -138,7 +138,7 @@ export const NotebookAbout: React.FC<NotebookAboutProps> = ({ profile, direction
               <div className="py-1.5 flex items-center justify-between">
                 <span className="text-[#786b59] dark:text-[#887a68] uppercase font-semibold">LIVE SITES</span>
                 <span className="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" /> 13 shipped
+                  <CheckCircle2 className="w-3 h-3" /> 9 shipped
                 </span>
               </div>
               <div className="py-1.5 flex items-center justify-between">

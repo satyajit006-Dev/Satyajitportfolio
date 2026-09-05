@@ -2,814 +2,577 @@ import { Project } from "../types";
 
 export const initialProjects: Project[] = [
   {
-    "id": "marigold",
-    "title": "Marigold",
-    "tagline": "HOTEL MARIGOLD • BHUBANESWAR",
-    "category": "Hospitality / Menu",
-    "tier": "Luxury",
-    "pages": "Multi-Section Dining & Banquet",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://marigoldrestaurant.vercel.app/",
-    "saleBadge": "Live Client",
-    "description": "Rooftop multicuisine dining site: signature-dish storytelling, reservation flow and a warm gold-on-charcoal identity.",
-    "features": [
-      "Gold-on-charcoal luxury rooftop ambience aesthetic",
-      "Interactive signature dish carousel with chef tasting notes",
-      "One-tap reservation flow & private event inquiries",
-      "Includes custom domain registration & 3 months free support"
+    id: "bangalore-cafe",
+    title: "The Bangalore Cafe",
+    tagline: "VEGETARIAN DINING • SHANTI NAGAR, BENGALURU",
+    category: "Hospitality / Dining",
+    tier: "Luxury",
+    pages: "Curated Vegetarian Menu & Table Reservations",
+    priceNote: "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
+    liveUrl: "https://thebangalorecafe-eta.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/TheBangaloreCafe",
+    saleBadge: "Featured",
+    description: "Premium vegetarian restaurant experience serving Indian, Italian, Continental, Chinese dishes, and dedicated Jain specialties with modern menu browsing.",
+    features: [
+      "Sophisticated emerald & gold vegetarian dining aesthetic",
+      "Interactive multicuisine menu with Jain & vegan dish tags",
+      "One-tap WhatsApp table reservations & private dining flow",
+      "Google Maps directions & mobile-first menu scanning"
     ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Motion"
-    ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.28s",
-      "responsive": "Flawless on iOS & Android",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#1c1917",
-    "cardCoverArt": {
-      "type": "retro",
-      "title": "MARIGOLD",
-      "subtitle": "ROOFTOP MULTICUISINE",
-      "accentColor": "#eab308",
-      "bgPattern": "linen"
-    },
-    "liveDemoData": {
-      "headline": "Where Flavour Meets The Skyline",
-      "subheadline": "Bhubaneswar’s premier rooftop multicuisine dining experience. Handcrafted recipes, candlelit skyline views, and celebrated culinary hospitality.",
-      "theme": "dark",
-      "accentHex": "#eab308",
-      "highlights": [
-        {
-          "title": "Signature Dining",
-          "desc": "Curated menu with tasting notes & pairing guides.",
-          "metric": "4.9 ★ Rating"
-        },
-        {
-          "title": "Domain & 3Mo Support",
-          "desc": "Custom domain setup with 3 months free maintenance.",
-          "metric": "Included"
-        },
-        {
-          "title": "WhatsApp Table Booking",
-          "desc": "Direct guest concierge integration.",
-          "metric": "1-Tap"
-        }
-      ]
-    }
-  },
-  {
-    "id": "narulas",
-    "title": "Narula's",
-    "tagline": "RESTAURANT • BHUBANESWAR",
-    "category": "Hospitality / Menu",
-    "tier": "Premium",
-    "pages": "Heritage Menu & Reservation",
-    "priceNote": "Quote varies by style & page count • Domain + 3mo service included",
-    "liveUrl": "https://narulasrestaurant.vercel.app/",
-    "saleBadge": "Featured",
-    "description": "Editorial serif hero, ratings and price signals up front, and a menu built to be read on a phone at the table.",
-    "features": [
-      "Editorial serif typography with warm heritage tones",
-      "High-contrast digital menu engineered for phone scanning",
-      "Google Maps directions & direct order integration",
-      "Domain name & 3 months full maintenance service included"
-    ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS"
-    ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.31s",
-      "responsive": "Mobile-first dining layout",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#1e1c19",
-    "cardCoverArt": {
-      "type": "typography",
-      "title": "NARULA'S",
-      "subtitle": "AUTHENTIC RECIPES",
-      "accentColor": "#f97316",
-      "bgPattern": "linen"
-    },
-    "liveDemoData": {
-      "headline": "A Table Worth Gathering Around",
-      "subheadline": "Heritage recipes, authentic clay-oven tandoor flavours, and genuine warmth served since 1998 in Bhubaneswar.",
-      "theme": "warm",
-      "accentHex": "#ea580c",
-      "highlights": [
-        {
-          "title": "Live Menu",
-          "desc": "Crisp category navigation for appetizers, curries & breads.",
-          "metric": "60+ Dishes"
-        },
-        {
-          "title": "Domain & Care",
-          "desc": "3 months full technical service & domain setup.",
-          "metric": "Included"
-        },
-        {
-          "title": "WhatsApp Concierge",
-          "desc": "Reserve or preorder for family gatherings.",
-          "metric": "Instant"
-        }
-      ]
-    }
-  },
-  {
-    "id": "the-aromas",
-    "title": "The Aromas",
-    "tagline": "MULTICUISINE DINING",
-    "category": "Hospitality / Menu",
-    "tier": "Luxury",
-    "pages": "Artisanal Culinary Suite",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://tharomas.vercel.app/",
-    "saleBadge": "Popular",
-    "description": "Light, appetising palette with a soft-cream layout — built around signature plates and easy table booking.",
-    "features": [
-      "Soft-cream editorial canvas with generous white space",
-      "Signature plate photography cards with flavor profiles",
-      "Banquet & catering booking inquiry forms",
-      "Custom domain name & 3 months free technical care included"
-    ],
-    "techStack": [
+    techStack: [
       "TypeScript",
       "React",
       "Tailwind CSS",
       "Vite"
     ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.29s",
-      "responsive": "Ultra-responsive scaling",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.27s",
+      responsive: "Mobile-first dining layout",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
     },
-    "cardColor": "#faf7f2",
-    "cardCoverArt": {
-      "type": "illustration",
-      "title": "THE AROMAS",
-      "subtitle": "CULINARY STORIES",
-      "accentColor": "#1c1917",
-      "bgPattern": "dots"
+    cardColor: "#13231a",
+    cardCoverArt: {
+      type: "botanical",
+      title: "THE BANGALORE CAFE",
+      subtitle: "PREMIUM VEGETARIAN DINING",
+      accentColor: "#22c55e",
+      bgPattern: "linen"
     },
-    "liveDemoData": {
-      "headline": "A Table Full of Stories",
-      "subheadline": "Flavours curated from spice routes across India and the Mediterranean, plated with contemporary precision.",
-      "theme": "clean",
-      "accentHex": "#ca8a04",
-      "highlights": [
+    liveDemoData: {
+      headline: "Vegetarian Culinary Excellence.",
+      subheadline: "A vibrant culinary destination in Shanti Nagar, Bengaluru serving soul-crafted vegetarian, vegan, and Jain delicacies across Indian and global menus.",
+      theme: "clean",
+      accentHex: "#15803d",
+      highlights: [
         {
-          "title": "Artisanal Plating",
-          "desc": "Designed to highlight vibrant food photography.",
-          "metric": "100% Quality"
+          title: "Multicuisine Menu",
+          desc: "Indian, Italian, Continental, Chinese & Jain specialties.",
+          metric: "120+ Dishes"
         },
         {
-          "title": "3 Months Service",
-          "desc": "Full maintenance, copy updates & domain included.",
-          "metric": "Included"
+          title: "Domain & 3Mo Care",
+          desc: "Custom domain registration + 3 months full maintenance.",
+          metric: "Included"
         },
         {
-          "title": "Direct Booking",
-          "desc": "Connects to your WhatsApp booking line in 1 click.",
-          "metric": "Direct"
+          title: "Table Reservations",
+          desc: "Direct WhatsApp concierge booking in one tap.",
+          metric: "1-Tap"
         }
       ]
     }
   },
   {
-    "id": "bench-cafe",
-    "title": "Bench Café",
-    "tagline": "CONTEMPORARY CAFÉ",
-    "category": "Hospitality / Menu",
-    "tier": "Simple",
-    "pages": "Fast Café Menu & Hours",
-    "priceNote": "Quote varies by style & page count • Domain + 3mo service included",
-    "liveUrl": "https://benchcafe.vercel.app/",
-    "saleBadge": "Staff Pick",
-    "description": "Slow-food brand page: deep green and wood, a clear-wood menu section, and opening hours that never hide.",
-    "features": [
-      "Forest green & warm oak aesthetic for specialty café vibes",
-      "Live opening status indicator with current café hours",
-      "Specialty brew guide with origin notes and brewing methods",
-      "Domain included with 3 months free menu & price updates"
+    id: "hole-in-the-wall",
+    title: "The Hole In The Wall Cafe",
+    tagline: "ALL-DAY BREAKFAST • KORAMANGALA, BENGALURU",
+    category: "Hospitality / Cafe",
+    tier: "Luxury",
+    pages: "All-Day Breakfast Menu & Kitchen Hours",
+    priceNote: "Quote varies by style & page count • Domain + 3mo service included",
+    liveUrl: "https://theholeinthewallcafe-sandy.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/TheHoleInTheWallCafe",
+    saleBadge: "Popular",
+    description: "Cosy all-day breakfast diner narrative featuring iconic waffles, fluffy buttermilk pancakes, artisan burgers, milkshakes, and opening hours.",
+    features: [
+      "Warm vintage diner aesthetic with golden waffle & coffee palette",
+      "Crisp breakfast & brunch menu with dietary icons & prices",
+      "Real-time kitchen opening hours ticker & takeaway concierge",
+      "High-contrast phone layout designed for on-the-go browsing"
     ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Motion"
-    ],
-    "specs": {
-      "lighthouseScore": 99,
-      "loadTime": "0.34s",
-      "responsive": "Handheld mobile perfection",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#15291e",
-    "cardCoverArt": {
-      "type": "botanical",
-      "title": "BENCH CAFÉ",
-      "subtitle": "GOOD FOOD. GOOD MOMENTS.",
-      "accentColor": "#22c55e",
-      "bgPattern": "terracotta-weave"
-    },
-    "liveDemoData": {
-      "headline": "Good Food. Good Moments.",
-      "subheadline": "Artisanal sourdough toasts, single-origin pour overs, and a sunlit corner to slow down and create.",
-      "theme": "clean",
-      "accentHex": "#15803d",
-      "highlights": [
-        {
-          "title": "Fresh Daily",
-          "desc": "Seasonal bake list updated in simple text files.",
-          "metric": "Organic"
-        },
-        {
-          "title": "3Mo Maintenance",
-          "desc": "Free menu tweaks & custom domain included.",
-          "metric": "Included"
-        },
-        {
-          "title": "Map Directions",
-          "desc": "One click opens exact Google Maps pin.",
-          "metric": "1-Tap"
-        }
-      ]
-    }
-  },
-  {
-    "id": "fitness-garage",
-    "title": "Fitness Garage",
-    "tagline": "INDUSTRIAL STRENGTH GYM",
-    "category": "Landing Page",
-    "tier": "Premium",
-    "pages": "High-Impact Gym Lead Funnel",
-    "priceNote": "Quote varies by style & page count • Domain + 3mo service included",
-    "liveUrl": "https://fitnessgarage-pi.vercel.app/",
-    "saleBadge": "High Energy",
-    "description": "Heavy condensed type, 8,000 sq ft floor plan and a trial-booking CTA that follows you down the page.",
-    "features": [
-      "High-impact industrial fitness typography and dark textures",
-      "Equipment & lifting zone breakdown with membership tiers",
-      "Persistent sticky trial-pass booking trigger",
-      "Domain setup & 3 months full membership updates included"
-    ],
-    "techStack": [
+    techStack: [
       "TypeScript",
       "React",
       "Tailwind CSS",
-      "Motion"
+      "Vite"
     ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.27s",
-      "responsive": "Rugged mobile layout",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.29s",
+      responsive: "Handheld mobile perfection",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
     },
-    "cardColor": "#18181b",
-    "cardCoverArt": {
-      "type": "geometric",
-      "title": "FITNESS GARAGE",
-      "subtitle": "BUILT FOR THE WORK",
-      "accentColor": "#eab308",
-      "bgPattern": "cyber-grid"
+    cardColor: "#2a1c14",
+    cardCoverArt: {
+      type: "retro",
+      title: "THE HOLE IN THE WALL",
+      subtitle: "ALL-DAY BREAKFAST DINER",
+      accentColor: "#f59e0b",
+      bgPattern: "linen"
     },
-    "liveDemoData": {
-      "headline": "Built For The Work.",
-      "subheadline": "8,000 sq ft of calibrated powerlifting plates, Olympic platforms, and high-intensity strength conditioning.",
-      "theme": "dark",
-      "accentHex": "#eab308",
-      "highlights": [
+    liveDemoData: {
+      headline: "Good Food. Cozy Morning Energy.",
+      subheadline: "Iconic all-day diner in Koramangala serving golden waffles, stacks of fluffy pancakes, and slow-brewed coffees that brighten every day.",
+      theme: "warm",
+      accentHex: "#d97706",
+      highlights: [
         {
-          "title": "Free Trial Pass",
-          "desc": "Claim your 1-day pass straight via WhatsApp.",
-          "metric": "Free Day"
+          title: "All-Day Brunch",
+          desc: "Signature waffles, eggs, sandwiches & thick shakes.",
+          metric: "Iconic Menu"
         },
         {
-          "title": "3 Months Care",
-          "desc": "Domain included with ongoing schedule updates.",
-          "metric": "Included"
+          title: "Domain & 3Mo Care",
+          desc: "Domain included with 3 months menu updates.",
+          metric: "Included"
         },
         {
-          "title": "No App Needed",
-          "desc": "Works smoothly on every member’s browser.",
-          "metric": "Universal"
+          title: "WhatsApp Pickup",
+          desc: "Direct pickup line and table inquiries.",
+          metric: "Instant"
         }
       ]
     }
   },
   {
-    "id": "knockout",
-    "title": "Knockout",
-    "tagline": "STRENGTH & FITNESS STUDIO",
-    "category": "Landing Page",
-    "tier": "Luxury",
-    "pages": "Boxing & Fitness Studio",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://knockout-snfl.vercel.app/",
-    "saleBadge": "Trending",
-    "description": "Landing page tuned for sign-ups: programme lists, live dies counters and a free-trial path in two taps.",
-    "features": [
-      "High-contrast athletic styling with motivational energy",
-      "Class schedule matrix with boxing & HIIT programmes",
-      "Coach roster with certifications and fight record highlights",
-      "Includes custom domain + 3 months free timetable updates"
+    id: "swosti-restaurant",
+    title: "Swosti Restaurant",
+    tagline: "AUTHENTIC INDIAN CUISINE • SANKARIDIHA, ODISHA",
+    category: "Hospitality / Dining",
+    tier: "Premium",
+    pages: "Heritage Indian Menu & Food Gallery",
+    priceNote: "Quote varies by style & page count • Domain + 3mo service included",
+    liveUrl: "https://swostiresturant.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/SWOSTIRESTURANT",
+    saleBadge: "Heritage",
+    description: "Authentic Indian dining webpage featuring rich regional curries, tandoor specials, ₹200–₹400 budget tiers, directions, and phone reservations.",
+    features: [
+      "Warm terracotta & saffron heritage dining visual layout",
+      "Comprehensive Indian menu with price tiers and portion guides",
+      "One-tap telephone orders & WhatsApp table reservations",
+      "Google Maps GPS navigation for traveling diners"
     ],
-    "techStack": [
+    techStack: [
       "TypeScript",
       "React",
       "Tailwind CSS"
     ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.30s",
-      "responsive": "Gym phone friendly",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.28s",
+      responsive: "Ultra-responsive scaling",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
     },
-    "cardColor": "#09090b",
-    "cardCoverArt": {
-      "type": "typography",
-      "title": "KNOCKOUT",
-      "subtitle": "TRAIN HARD. LIVE STRONG.",
-      "accentColor": "#ef4444",
-      "bgPattern": "cyber-grid"
+    cardColor: "#271b12",
+    cardCoverArt: {
+      type: "typography",
+      title: "SWOSTI RESTAURANT",
+      subtitle: "AUTHENTIC INDIAN TASTE",
+      accentColor: "#ea580c",
+      bgPattern: "terracotta-weave"
     },
-    "liveDemoData": {
-      "headline": "Train Hard. Live Strong.",
-      "subheadline": "Boxing conditioning, kettlebell fundamentals, and high-energy group rounds that push your baseline.",
-      "theme": "dark",
-      "accentHex": "#dc2626",
-      "highlights": [
+    liveDemoData: {
+      headline: "Authentic Recipes Made with Heart.",
+      subheadline: "Serving beloved Indian curries, clay-oven rotis, and aromatic biryanis in Sankaridiha, Odisha at family-friendly prices.",
+      theme: "warm",
+      accentHex: "#ea580c",
+      highlights: [
         {
-          "title": "Class Passes",
-          "desc": "Simple pricing with no hidden joining fees.",
-          "metric": "Flexible"
+          title: "Budget Friendly",
+          desc: "Delicious authentic dining at ₹200–₹400 range.",
+          metric: "₹200–₹400"
         },
         {
-          "title": "Domain & 3Mo Care",
-          "desc": "Domain name & 3 months full service included.",
-          "metric": "Included"
+          title: "Domain & 3Mo Care",
+          desc: "Domain setup & 3 months full support included.",
+          metric: "Included"
         },
         {
-          "title": "Direct WhatsApp",
-          "desc": "Reserve your ring spot directly.",
-          "metric": "1-Tap"
+          title: "Fast Orders",
+          desc: "Call direct or message on WhatsApp.",
+          metric: "1-Tap"
         }
       ]
     }
   },
   {
-    "id": "hf-plumbing",
-    "title": "HF Plumbing",
-    "tagline": "24/7 EMERGENCY PLUMBERS",
-    "category": "Landing Page",
-    "tier": "Simple",
-    "pages": "High-Conversion Emergency Dispatch",
-    "priceNote": "Quote varies by style & page count • Domain + 3mo service included",
-    "liveUrl": "https://hfplumbers.vercel.app/",
-    "saleBadge": "Essential",
-    "description": "High-urgency trust signals: live response-time ticker, transparent pricing breakdowns, and direct call trigger.",
-    "features": [
-      "Urgent click-to-call emergency hotline banner",
-      "Transparent flat-rate pricing tiers for common repairs",
-      "Gas Safe and certified plumber trust credentials",
-      "Custom domain name and 3 months free emergency text updates"
+    id: "eight-zero-cafe",
+    title: "8 Zero Cafe & Bakery",
+    tagline: "ARTISANAL BAKERY & CAFE • JARAKA, ODISHA",
+    category: "Hospitality / Cafe",
+    tier: "Premium",
+    pages: "Cakes, Artisanal Pizzas & Cafe Menu",
+    priceNote: "Quote varies by style & page count • Domain + 3mo service included",
+    liveUrl: "https://8zerocafebakery.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/8ZeroCafeBakery",
+    saleBadge: "Trending",
+    description: "Artisanal bakery and cafe web app featuring fresh custom celebration cakes, pizzas, burgers, sandwiches, espresso, and WhatsApp takeaway.",
+    features: [
+      "Vibrant bakery & cafe branding with warm amber and espresso tones",
+      "Custom celebration cake catalogue with flavor & size picker",
+      "Fast WhatsApp takeaway ordering & doorstep delivery flow",
+      "Opening hours schedule & College Road location map pin"
     ],
-    "techStack": [
+    techStack: [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite"
+    ],
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.26s",
+      responsive: "Handheld mobile perfection",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
+    },
+    cardColor: "#1d1712",
+    cardCoverArt: {
+      type: "retro",
+      title: "8 ZERO CAFE & BAKERY",
+      subtitle: "FRESH BAKES & CAFE BITES",
+      accentColor: "#f59e0b",
+      bgPattern: "linen"
+    },
+    liveDemoData: {
+      headline: "Freshly Baked Every Single Morning.",
+      subheadline: "Jaraka’s favorite spot for handcrafted birthday cakes, oven-hot artisanal pizzas, juicy burgers, and barista-pulled coffee on College Road.",
+      theme: "warm",
+      accentHex: "#d97706",
+      highlights: [
+        {
+          title: "Fresh Bakes",
+          desc: "Custom cakes, pizzas, burgers & beverages.",
+          metric: "Daily Fresh"
+        },
+        {
+          title: "Domain & 3Mo Care",
+          desc: "Custom domain & 3 months menu updates.",
+          metric: "Included"
+        },
+        {
+          title: "WhatsApp Ordering",
+          desc: "Direct takeaway & celebration orders.",
+          metric: "Instant"
+        }
+      ]
+    }
+  },
+  {
+    id: "zeegri-bakery",
+    title: "Zeegri Cafe & Bakery",
+    tagline: "BAKERY & CAFE • JARAKA, PANDUA, ODISHA",
+    category: "Hospitality / Cafe",
+    tier: "Standard",
+    pages: "Artisan Cakes, Pastries & Fast Food",
+    priceNote: "Quote varies by style & page count • Domain + 3mo service included",
+    liveUrl: "https://zeegri-cafebakery.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/ZEEGRICafeBakery",
+    saleBadge: "4.9 ★ Rated",
+    description: "Artisan cakes, pastries, burgers, pizzas, and bakery treats with 4.9-star reviews (95+ ratings) and quick phone/WhatsApp ordering.",
+    features: [
+      "Appealing pastry & confectionery aesthetic with rose gold accents",
+      "4.9-star review trust credential bar with Google Maps proof",
+      "Categorized bakery pricing: birthday cakes, snacks, beverages",
+      "Direct click-to-call hotline & instant WhatsApp messenger"
+    ],
+    techStack: [
       "TypeScript",
       "React",
       "Tailwind CSS"
     ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.25s",
-      "responsive": "Emergency thumb layout",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.25s",
+      responsive: "Flawless on iOS & Android",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
     },
-    "cardColor": "#0f172a",
-    "cardCoverArt": {
-      "type": "geometric",
-      "title": "HF PLUMBING",
-      "subtitle": "RELIABLE SERVICE 24/7",
-      "accentColor": "#38bdf8",
-      "bgPattern": "linen"
+    cardColor: "#22171a",
+    cardCoverArt: {
+      type: "botanical",
+      title: "ZEEGRI CAFE & BAKERY",
+      subtitle: "ARTISAN CAKES & TREATS",
+      accentColor: "#f43f5e",
+      bgPattern: "dots"
     },
-    "liveDemoData": {
-      "headline": "Reliable Plumbing Services When You Need It.",
-      "subheadline": "Emergency burst pipes, boiler repairs, bathroom installations and certified gas safety checks across the region.",
-      "theme": "clean",
-      "accentHex": "#0284c7",
-      "highlights": [
+    liveDemoData: {
+      headline: "Delight in Every Sweet Slice.",
+      subheadline: "Indulge in artisanal chocolate cakes, fresh fruit pastries, crispy pizzas, and bakery savories loved across Pandua and Jaraka.",
+      theme: "clean",
+      accentHex: "#e11d48",
+      highlights: [
         {
-          "title": "30-Min Response",
-          "desc": "Dedicated emergency dispatch on standby.",
-          "metric": "24/7"
+          title: "4.9 ★ Rating",
+          desc: "Backed by 95+ verified neighborhood reviews.",
+          metric: "Top Rated"
         },
         {
-          "title": "Domain Included",
-          "desc": "Custom domain setup with 3 months free support.",
-          "metric": "Included"
+          title: "Domain & 3Mo Care",
+          desc: "Custom domain name + 3 months technical care.",
+          metric: "Included"
         },
         {
-          "title": "Direct WhatsApp",
-          "desc": "Send photos of the leak for instant quotes.",
-          "metric": "Photo Quote"
+          title: "Fast Delivery",
+          desc: "Message cake orders directly.",
+          metric: "1-Tap"
         }
       ]
     }
   },
   {
-    "id": "florin-handyman",
-    "title": "Florin the Handyman",
-    "tagline": "PROPERTY MAINTENANCE • LONDON",
-    "category": "Landing Page",
-    "tier": "Standard",
-    "pages": "Service Catalog & Quote Estimator",
-    "priceNote": "Quote varies by style & page count • Domain + 3mo service included",
-    "liveUrl": "https://demo-puce-iota-pdktad1mwg.vercel.app/",
-    "saleBadge": "Local Pro",
-    "description": "Clear service matrix, coverage area and instant estimate builder.",
-    "features": [
-      "Comprehensive services grid (carpentry, electrical, painting)",
-      "London postal district coverage interactive map checker",
-      "Before/after repair photo comparison slider",
-      "Includes custom domain registration + 3 months service support"
+    id: "rd-fitness",
+    title: "RD Fitness",
+    tagline: "PREMIER GYM • JARAKA, KUMARI, ODISHA",
+    category: "Fitness / Gym",
+    tier: "Premium",
+    pages: "Strength Zones, Membership & Free Pass",
+    priceNote: "Quote varies by style & page count • Domain + 3mo service included",
+    liveUrl: "https://rd-fitness.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/RD-Fitness",
+    saleBadge: "High Energy",
+    description: "High-impact fitness center showcase featuring heavy free weights, cardio decks, strength machinery, trainer roster and trial pass bookings.",
+    features: [
+      "Industrial high-contrast athletic theme with crimson & charcoal hues",
+      "Gym floor tour: powerlifting stations, cardio and machine zones",
+      "Transparent membership options (monthly, quarterly, annual)",
+      "Instant call (098616 22093) and WhatsApp trial session pass"
     ],
-    "techStack": [
+    techStack: [
       "TypeScript",
       "React",
+      "Tailwind CSS",
+      "Motion"
+    ],
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.28s",
+      responsive: "Rugged mobile layout",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
+    },
+    cardColor: "#161618",
+    cardCoverArt: {
+      type: "geometric",
+      title: "RD FITNESS",
+      subtitle: "BEST GYM IN JARAKA",
+      accentColor: "#ef4444",
+      bgPattern: "cyber-grid"
+    },
+    liveDemoData: {
+      headline: "Transform Your Strength & Discipline.",
+      subheadline: "Jaraka’s premier fitness center equipped with Olympic plates, calibrated dumbbells, cardio machines, and dedicated certified coaching.",
+      theme: "dark",
+      accentHex: "#dc2626",
+      highlights: [
+        {
+          title: "Complete Gym",
+          desc: "Strength, cardio, and heavy free weight zones.",
+          metric: "Full Gear"
+        },
+        {
+          title: "Domain & 3Mo Care",
+          desc: "Custom domain & 3 months schedule care.",
+          metric: "Included"
+        },
+        {
+          title: "Free Trial Pass",
+          desc: "Reserve your first training session.",
+          metric: "Free Day"
+        }
+      ]
+    }
+  },
+  {
+    id: "aura-films",
+    title: "Aura Films",
+    tagline: "CINEMATIC VIDEOGRAPHY & PRODUCTION",
+    category: "Creative / Videography",
+    tier: "Luxury",
+    pages: "Showreels, Wedding & Commercial Films",
+    priceNote: "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
+    liveUrl: "https://videographer-nine.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/videographer",
+    saleBadge: "Cinematic",
+    description: "Cinematic filmmaking portfolio showcasing wedding films, music videos, brand commercials, and high-production event storytelling.",
+    features: [
+      "Moody obsidian visual identity with subtle gold & bronze highlights",
+      "Curated video showreel matrix and film category filters",
+      "Client testimonial carousel & cinematic production gear kit",
+      "Booking date inquiry form and direct WhatsApp project consultation"
+    ],
+    techStack: [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Motion"
+    ],
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.30s",
+      responsive: "Cinematic layout",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
+    },
+    cardColor: "#0f0f12",
+    cardCoverArt: {
+      type: "retro",
+      title: "AURA FILMS",
+      subtitle: "CINEMATIC PRODUCTION",
+      accentColor: "#d97706",
+      bgPattern: "linen"
+    },
+    liveDemoData: {
+      headline: "Visual Stories That Echo.",
+      subheadline: "High-end cinematic videography for luxury weddings, commercial brand films, and evocative event documentation.",
+      theme: "dark",
+      accentHex: "#d97706",
+      highlights: [
+        {
+          title: "4K Cinema",
+          desc: "Sony FX cinema line & anamorphic optics.",
+          metric: "Cinema 4K"
+        },
+        {
+          title: "Domain & 3Mo Care",
+          desc: "Custom domain setup & 3 months portfolio care.",
+          metric: "Included"
+        },
+        {
+          title: "Direct Booking",
+          desc: "Lock in event dates and consultations.",
+          metric: "Direct"
+        }
+      ]
+    }
+  },
+  {
+    id: "hexaloom-docs",
+    title: "Hexaloom Docs",
+    tagline: "DOCUMENT AUTOMATION & PDF PLATFORM",
+    category: "Apps & Tools / Document Automation",
+    tier: "Simple",
+    pages: "Document Generator & PDF Converter Suite",
+    priceNote: "Quote varies by style & page count • Domain + 3mo service included",
+    liveUrl: "https://pdfwebpage.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/PDFwebpage",
+    saleBadge: "AI Powered",
+    description: "Document automation platform for instant in-browser PDF generation, template rendering, and automated document workflows.",
+    features: [
+      "Modern tech aesthetic with electric indigo and cyan accents",
+      "Client-side HTML-to-PDF compilation powered by jsPDF & html2canvas",
+      "Integrated Google GenAI SDK for automated document summarization",
+      "Zero server rendering bottlenecks with instant file download"
+    ],
+    techStack: [
+      "TypeScript",
+      "React",
+      "Google GenAI",
+      "jsPDF",
       "Tailwind CSS"
     ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.29s",
-      "responsive": "Optimized for mobile quotes",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.24s",
+      responsive: "Developer web app layout",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
     },
-    "cardColor": "#fafaf9",
-    "cardCoverArt": {
-      "type": "illustration",
-      "title": "FLORIN HANDYMAN",
-      "subtitle": "FIXED PROPERLY. BUILT TO LAST.",
-      "accentColor": "#eab308",
-      "bgPattern": "dots"
+    cardColor: "#0f172a",
+    cardCoverArt: {
+      type: "geometric",
+      title: "HEXALOOM DOCS",
+      subtitle: "DOCUMENT AUTOMATION",
+      accentColor: "#38bdf8",
+      bgPattern: "cyber-grid"
     },
-    "liveDemoData": {
-      "headline": "Fixed Properly. Built To Last.",
-      "subheadline": "Professional property maintenance, custom carpentry, door fittings, tiling, and reliable domestic repairs.",
-      "theme": "clean",
-      "accentHex": "#ca8a04",
-      "highlights": [
+    liveDemoData: {
+      headline: "Next-Gen In-Browser Document Automation.",
+      subheadline: "Generate, convert, format, and download high-resolution PDF documents instantly with zero server latency and AI automation.",
+      theme: "dark",
+      accentHex: "#0284c7",
+      highlights: [
         {
-          "title": "15+ Years Exp",
-          "desc": "Trusted by over 400+ London homeowners.",
-          "metric": "5.0 ★"
+          title: "Client-Side",
+          desc: "Zero server bottleneck for document creation.",
+          metric: "Instant"
         },
         {
-          "title": "Domain & 3Mo Care",
-          "desc": "Custom domain setup & 3 months maintenance.",
-          "metric": "Included"
+          title: "AI Enabled",
+          desc: "Powered by modern Google GenAI models.",
+          metric: "Gemini"
         },
         {
-          "title": "$0 Hosting",
-          "desc": "100% static frontend with zero upkeep cost.",
-          "metric": "$0/mo"
+          title: "Full Code",
+          desc: "Turnkey TypeScript repo ready to fork.",
+          metric: "Turnkey"
         }
       ]
     }
   },
   {
-    "id": "grants-ride-clean",
-    "title": "Grant's Ride Clean",
-    "tagline": "AUTOMOTIVE DETAILING • DUBAI",
-    "category": "Brand / Product",
-    "tier": "Luxury",
-    "pages": "Supercar Studio Showcase",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://grantsrideclean.vercel.app/",
-    "saleBadge": "Luxury",
-    "description": "Premium detailing studio: multi-stage paint correction, ceramic coating showcases and appointment booking.",
-    "features": [
-      "Gloss-black luxury automotive aesthetic with studio lighting",
-      "Multi-stage ceramic coating & PPF package comparisons",
-      "Supercar gallery with high-resolution detail crops",
-      "Domain included + 3 months free VIP package updates"
+    id: "satyajit-portfolio",
+    title: "Satyajit Portfolio",
+    tagline: "WEB DEVELOPER & UI/UX DESIGNER",
+    category: "Creative / Web Portfolio",
+    tier: "Luxury",
+    pages: "Interactive Developer Portfolio & Demos",
+    priceNote: "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
+    liveUrl: "https://satyajitportfolio-seven.vercel.app/",
+    githubUrl: "https://github.com/satyajit200y-maker/SatyajitPortfolio",
+    saleBadge: "Showcase",
+    description: "Interactive personal developer portfolio showcasing modern, responsive frontend craftsmanship, benchmarks, and project archives.",
+    features: [
+      "High-performance editorial layout with dark/light themes",
+      "Interactive live demo viewer, device frame simulator & specs ledger",
+      "Integrated direct WhatsApp inquiry channel and email concierge",
+      "100/100 Google Lighthouse speed and sub-300ms load benchmarks"
     ],
-    "techStack": [
+    techStack: [
       "TypeScript",
       "React",
       "Tailwind CSS",
-      "Motion"
+      "Motion",
+      "Vite"
     ],
-    "specs": {
-      "lighthouseScore": 99,
-      "loadTime": "0.33s",
-      "responsive": "Cinematic layout",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
+    specs: {
+      lighthouseScore: 100,
+      loadTime: "0.25s",
+      responsive: "Ultra-responsive developer grid",
+      hostingCost: "$0 / month forever",
+      domainIncluded: "Custom domain included",
+      serviceIncluded: "3 Months free maintenance"
     },
-    "cardColor": "#09090b",
-    "cardCoverArt": {
-      "type": "geometric",
-      "title": "GRANT'S RIDE CLEAN",
-      "subtitle": "YOUR AUTOMOTIVE REFINED.",
-      "accentColor": "#e2e8f0",
-      "bgPattern": "cyber-grid"
+    cardColor: "#1c1917",
+    cardCoverArt: {
+      type: "typography",
+      title: "SATYAJIT NAYAK",
+      subtitle: "WEB DEV & UI/UX DESIGN",
+      accentColor: "#eab308",
+      bgPattern: "architectural-lines"
     },
-    "liveDemoData": {
-      "headline": "Your Automotive Refined.",
-      "subheadline": "Multi-stage machine paint correction, Gtechniq ceramic coatings, and interior leather rejuvenation.",
-      "theme": "dark",
-      "accentHex": "#94a3b8",
-      "highlights": [
+    liveDemoData: {
+      headline: "Crafting High-Performance Digital Experiences.",
+      subheadline: "Engineered with modern TypeScript, React, and tailored aesthetic systems that turn visitors into loyal clients for real businesses.",
+      theme: "dark",
+      accentHex: "#eab308",
+      highlights: [
         {
-          "title": "Studio Grade",
-          "desc": "Dust-free climate-controlled detailing bay.",
-          "metric": "9H Ceramic"
+          title: "100/100 Score",
+          desc: "Lighthouse audit benchmarks for maximum SEO.",
+          metric: "100 Speed"
         },
         {
-          "title": "Domain & 3Mo Care",
-          "desc": "Custom domain & 3 months full support included.",
-          "metric": "Included"
+          title: "Domain & 3Mo Care",
+          desc: "Custom domain registration & 3 months care.",
+          metric: "Included"
         },
         {
-          "title": "Turnkey Code",
-          "desc": "Ready to deploy with your portfolio in 24h.",
-          "metric": "24h"
-        }
-      ]
-    }
-  },
-  {
-    "id": "j-brick",
-    "title": "J Brick",
-    "tagline": "CONSTRUCTION & DEVELOPMENT",
-    "category": "Brand / Product",
-    "tier": "Premium",
-    "pages": "Architectural Ledger & Tenders",
-    "priceNote": "Quote varies by style & page count • Domain + 3mo service included",
-    "liveUrl": "https://jbrickprivateltd.vercel.app/",
-    "saleBadge": "Architecture",
-    "description": "Structural-integrity messaging in a dark architectural grid, with a project ledger and quote request.",
-    "features": [
-      "Bold architectural grid lines with slate & safety orange accents",
-      "Commercial & residential completed projects ledger",
-      "Structural certifications, safety standards and tender docs",
-      "Custom domain name and 3 months full project ledger support"
-    ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS"
-    ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.30s",
-      "responsive": "Industrial scaling",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#1c1917",
-    "cardCoverArt": {
-      "type": "typography",
-      "title": "J BRICK",
-      "subtitle": "BUILT TO LAST.",
-      "accentColor": "#f97316",
-      "bgPattern": "architectural-lines"
-    },
-    "liveDemoData": {
-      "headline": "Engineering Excellence. Built To Last.",
-      "subheadline": "Commercial structural framing, brickwork restoration, civil engineering, and premier architectural construction.",
-      "theme": "dark",
-      "accentHex": "#ea580c",
-      "highlights": [
-        {
-          "title": "Precision Ledger",
-          "desc": "Track ongoing developments and completed builds.",
-          "metric": "50+ Sites"
-        },
-        {
-          "title": "Domain & 3Mo Care",
-          "desc": "Domain registered + 3 months maintenance.",
-          "metric": "Included"
-        },
-        {
-          "title": "WhatsApp Tenders",
-          "desc": "Direct architect and quantity surveyor channel.",
-          "metric": "Direct"
-        }
-      ]
-    }
-  },
-  {
-    "id": "elandeb",
-    "title": "Elandeb",
-    "tagline": "SKINCARE BRAND",
-    "category": "Brand / Product",
-    "tier": "Luxury",
-    "pages": "Editorial Skincare & Product Catalog",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://elandeb.vercel.app/",
-    "saleBadge": "Trending",
-    "description": "Proof-led beauty storefront: clinical claims, treatment booking and a moody spotlight product hero.",
-    "features": [
-      "Editorial botanical mood with warm terracotta & cream highlights",
-      "Clinical trial data visualizations & ingredient breakdowns",
-      "Product spotlight carousel with direct checkout/DM link",
-      "Domain included + 3 months seasonal catalogue update support"
-    ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Motion"
-    ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.31s",
-      "responsive": "Silky smooth mobile gestures",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#2b1b17",
-    "cardCoverArt": {
-      "type": "botanical",
-      "title": "ELANDEB",
-      "subtitle": "SKINCARE ROUTINE FOR REAL LIFE",
-      "accentColor": "#f43f5e",
-      "bgPattern": "terracotta-weave"
-    },
-    "liveDemoData": {
-      "headline": "Skincare Routine Built for Real Life.",
-      "subheadline": "Clinically tested peptide formulations, barrier repair botanical extracts, and minimalist daily self-care.",
-      "theme": "warm",
-      "accentHex": "#e11d48",
-      "highlights": [
-        {
-          "title": "Clinical Results",
-          "desc": "94% reported improved barrier hydration in 14 days.",
-          "metric": "Proven"
-        },
-        {
-          "title": "Domain & 3Mo Care",
-          "desc": "Custom domain & 3 months full support included.",
-          "metric": "Included"
-        },
-        {
-          "title": "WhatsApp Ordering",
-          "desc": "Direct chat orders with customized recommendations.",
-          "metric": "Direct"
-        }
-      ]
-    }
-  },
-  {
-    "id": "harrys-studio",
-    "title": "Harry's Studio",
-    "tagline": "BARBERSHOP • LONDON W1",
-    "category": "Hospitality / Menu",
-    "tier": "Luxury",
-    "pages": "Artisan Grooming & Booking",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://harrysstudio.vercel.app/",
-    "saleBadge": "Art Direction",
-    "description": "Cinematic loading sequence into a craft-barber narrative — the boldest art direction in the set.",
-    "features": [
-      "Gilded gold & charcoal heritage barbershop visual identity",
-      "Interactive haircut & beard grooming service menu",
-      "Stylist profile gallery with signature cuts",
-      "Domain setup and 3 months free price & staff update support"
-    ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Motion"
-    ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.29s",
-      "responsive": "Mobile chair booking",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#181411",
-    "cardCoverArt": {
-      "type": "retro",
-      "title": "HARRY'S STUDIO",
-      "subtitle": "CRAFT BARBERING • LONDON",
-      "accentColor": "#d97706",
-      "bgPattern": "linen"
-    },
-    "liveDemoData": {
-      "headline": "The Craft of Traditional Grooming.",
-      "subheadline": "Hot towel wet shaves, precision scissor work, and beard sculpts in the heart of London Mayfair.",
-      "theme": "dark",
-      "accentHex": "#d97706",
-      "highlights": [
-        {
-          "title": "Service Menu",
-          "desc": "Clear transparent pricing for all haircut services.",
-          "metric": "Artisanal"
-        },
-        {
-          "title": "Domain & 3Mo Care",
-          "desc": "Domain name & 3 months full maintenance.",
-          "metric": "Included"
-        },
-        {
-          "title": "WhatsApp Booking",
-          "desc": "Book your barber appointment in 2 taps.",
-          "metric": "Instant"
-        }
-      ]
-    }
-  },
-  {
-    "id": "lumina-os",
-    "title": "OneStop / Lumina Studio",
-    "tagline": "DIGITAL & SERVICES HUB",
-    "category": "Landing Page",
-    "tier": "Luxury",
-    "pages": "Modern Agency & SaaS Architecture",
-    "priceNote": "Quote varies by Luxury/Simple tier & page count • Domain + 3mo service included",
-    "liveUrl": "https://onestop-azure.vercel.app/",
-    "saleBadge": "Pro Edition",
-    "description": "High-contrast digital architecture crafted for tech consultants, SaaS apps, modern agencies and digital service hubs.",
-    "features": [
-      "High-contrast obsidian theme with subtle luminous border highlights",
-      "Feature matrix & interactive pricing tiers preview",
-      "Sub-300ms speed with 100/100 Lighthouse performance",
-      "Includes custom domain + 3 months full technical care"
-    ],
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Motion"
-    ],
-    "specs": {
-      "lighthouseScore": 100,
-      "loadTime": "0.28s",
-      "responsive": "Ultra-responsive developer grid",
-      "hostingCost": "$0 / month forever",
-      "domainIncluded": "Custom domain included",
-      "serviceIncluded": "3 Months free maintenance"
-    },
-    "cardColor": "#09090b",
-    "cardCoverArt": {
-      "type": "geometric",
-      "title": "ONESTOP STUDIO",
-      "subtitle": "PRECISION DIGITAL ARCHITECTURE",
-      "accentColor": "#38bdf8",
-      "bgPattern": "cyber-grid"
-    },
-    "liveDemoData": {
-      "headline": "Next-Generation Read-Only Architecture.",
-      "subheadline": "Engineered for founders who want maximum speed, uncompromising aesthetics, and zero server maintenance.",
-      "theme": "dark",
-      "accentHex": "#38bdf8",
-      "highlights": [
-        {
-          "title": "Sub-300ms",
-          "desc": "Pure static payload with zero runtime bottlenecks.",
-          "metric": "0.28s"
-        },
-        {
-          "title": "Domain & 3Mo Care",
-          "desc": "Custom domain name and 3 months free support.",
-          "metric": "Included"
-        },
-        {
-          "title": "Full Code Included",
-          "desc": "Delivered ready to deploy in under 24 hours.",
-          "metric": "Turnkey"
+          title: "Open Source",
+          desc: "All 9 projects verified on GitHub satyajit200y-maker.",
+          metric: "9 Repos"
         }
       ]
     }

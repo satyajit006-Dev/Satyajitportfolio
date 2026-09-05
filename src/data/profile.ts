@@ -10,12 +10,12 @@ export const defaultProfile: ProfileDetails = {
   linkedin: 'https://www.linkedin.com/in/satyajit',
   location: 'Bhubaneswar, Odisha • IN',
   timezone: 'IST • UTC+5:30',
-  bio: "I'm Satyajit — I design and build fast, cinematic sites for restaurants, gyms, trades and retail brands. Thirteen of them are live below.",
-  shortNote: "Notes, sketches & shipped work — thirteen websites for real businesses, all live and clickable.",
+  bio: "I'm Satyajit — I design and build fast, responsive websites and web apps for cafes, restaurants, gyms, and creators. All 9 live projects are verified below.",
+  shortNote: "Notes, sketches & shipped work — 9 live websites and web apps from my GitHub, all live and clickable.",
   availability: "Open for freelance & contract work — let's build something."
 };
 
-const STORAGE_KEY = 'satyajit_portfolio_profile_v2';
+const STORAGE_KEY = 'satyajit_portfolio_profile_v3';
 
 export function getStoredProfile(): ProfileDetails {
   if (typeof window === 'undefined') return defaultProfile;

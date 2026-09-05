@@ -38,6 +38,7 @@ export interface Project {
   pages: string;
   priceNote: string;
   liveUrl: string;
+  githubUrl?: string;
   saleBadge: string;
   description: string;
   features: string[];

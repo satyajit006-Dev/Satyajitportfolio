@@ -51,7 +51,7 @@ export const NotebookCover: React.FC<NotebookCoverProps> = ({ profile, direction
               </div>
               <div className="py-2.5 flex items-center justify-between">
                 <span className="text-[#8c7e6b] dark:text-[#887a68] uppercase tracking-wider font-semibold">SHIPPED</span>
-                <span className="text-[#292524] dark:text-[#e7e5e4] font-bold text-amber-700 dark:text-amber-400">13 live client demos</span>
+                <span className="text-[#292524] dark:text-[#e7e5e4] font-bold text-amber-700 dark:text-amber-400">9 live GitHub projects</span>
               </div>
               <div className="py-2.5 flex items-center justify-between">
                 <span className="text-[#8c7e6b] dark:text-[#887a68] uppercase tracking-wider font-semibold">STACK</span>

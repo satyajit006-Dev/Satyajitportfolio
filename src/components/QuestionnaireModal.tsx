@@ -33,17 +33,17 @@ export const QuestionnaireModal: React.FC<QuestionnaireModalProps> = ({
     {
       title: 'Luxury Tier',
       desc: 'Gold/charcoal aesthetic, rich micro-interactions, storytelling, signature menu/reservation flows.',
-      examples: 'Hotel Marigold, The Aromas, Elandeb'
+      examples: 'The Bangalore Cafe, Aura Films, The Hole In The Wall Cafe'
     },
     {
       title: 'Premium Tier',
       desc: 'High-converting sales funnels, aggressive call-to-actions, pass trials, dynamic performance styling.',
-      examples: 'Fitness Garage, Knockout Gym, Grant’s Ride Clean'
+      examples: 'RD Fitness, Swosti Restaurant, 8 Zero Cafe & Bakery'
     },
     {
       title: 'Simple Tier',
-      desc: 'Fast, pragmatic contractor & trade dispatch sites with tap-to-call, quote forms, and services ledger.',
-      examples: 'HF Plumbing, Florin Handyman, J Brick'
+      desc: 'Fast, pragmatic showcase & web tool sites with tap-to-call, quote forms, and services ledger.',
+      examples: 'Zeegri Cafe & Bakery, Hexaloom Docs, Satyajit Portfolio'
     }
   ];
 
