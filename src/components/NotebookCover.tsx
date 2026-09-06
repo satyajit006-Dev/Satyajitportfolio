@@ -28,9 +28,6 @@ export const NotebookCover: React.FC<NotebookCoverProps> = ({ profile, direction
               <span className="text-[11px] font-mono tracking-widest text-[#786b59] dark:text-[#a89b88] uppercase font-semibold">
                 THIS BOOK BELONGS TO:
               </span>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#f4ebd9] dark:bg-[#2c231c] text-[#713f12] dark:text-[#fbbf24] border border-[#d9ccb4] dark:border-[#42352a]">
-                VOL. 01
-              </span>
             </div>
             
             <h2 className="font-serif-book text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1c1917] dark:text-[#fafafa]">
@@ -39,25 +36,6 @@ export const NotebookCover: React.FC<NotebookCoverProps> = ({ profile, direction
             <p className="font-serif-book italic text-sm sm:text-base text-[#574d3f] dark:text-[#c4b5a2] mt-2 leading-relaxed">
               {profile.shortNote}
             </p>
-
-            <div className="mt-6 border-t border-b border-[#e2d6bf] dark:border-[#332b24] divide-y divide-[#ece3d2] dark:divide-[#2d241d] font-mono text-xs">
-              <div className="py-2.5 flex items-center justify-between">
-                <span className="text-[#8c7e6b] dark:text-[#887a68] uppercase tracking-wider font-semibold">BASED</span>
-                <span className="text-[#292524] dark:text-[#e7e5e4] font-medium">{profile.location}</span>
-              </div>
-              <div className="py-2.5 flex items-center justify-between">
-                <span className="text-[#8c7e6b] dark:text-[#887a68] uppercase tracking-wider font-semibold">DOING</span>
-                <span className="text-[#292524] dark:text-[#e7e5e4] font-medium">Front-end & product websites</span>
-              </div>
-              <div className="py-2.5 flex items-center justify-between">
-                <span className="text-[#8c7e6b] dark:text-[#887a68] uppercase tracking-wider font-semibold">SHIPPED</span>
-                <span className="text-[#292524] dark:text-[#e7e5e4] font-bold text-amber-700 dark:text-amber-400">9 live GitHub projects</span>
-              </div>
-              <div className="py-2.5 flex items-center justify-between">
-                <span className="text-[#8c7e6b] dark:text-[#887a68] uppercase tracking-wider font-semibold">STACK</span>
-                <span className="text-[#292524] dark:text-[#e7e5e4] font-medium">TypeScript • React • Next.js</span>
-              </div>
-            </div>
           </div>
 
           {/* Yellow sticky note with washi tape */}

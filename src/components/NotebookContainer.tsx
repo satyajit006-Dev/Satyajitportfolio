@@ -130,9 +130,6 @@ export const NotebookContainer: React.FC<NotebookContainerProps> = ({
           <span className="font-mono text-xs sm:text-sm font-bold tracking-wider text-[#786b59] dark:text-[#a89b88] uppercase">
             ARCHIVAL WORKBOOK • {tabs[currentPage]?.label}
           </span>
-          <span className="hidden sm:inline-block text-[10px] font-mono px-2 py-0.5 rounded bg-[#f4ebd9] dark:bg-[#2c231c] text-[#713f12] dark:text-[#fbbf24] border border-[#d9ccb4] dark:border-[#42352a]">
-            ENTRY Nº 0{currentPage + 1}
-          </span>
         </div>
       </div>
 
